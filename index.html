@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href=".style.css">
-
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
 </head>
 
@@ -21,6 +22,49 @@
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">New York Times Search</a>
     </nav>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="searchTerm" class="form-label">Search Term: </label>
+                <input type="text" class="form-control" id="searchTerm" aria-describedby="searchTerm">
+            </div>
+            <div class="mb-3">
+                <label for="customRange2" class="form-label">Number of Records to Retrieve</label>
+                <br>
+                <input type="range" class="form-range" min="1" max="5" id="customRange2">
+            </div>
+            <div class="mb-3">
+                <label for="searchTerm" class="form-label">Start Year (optional): </label>
+                <input type="text" class="form-control" id="startYear" aria-describedby="startYear">
+            </div>
+            <div class="mb-3">
+                <label for="searchTerm" class="form-label">End Year (optional): </label>
+                <input type="text" class="form-control" id="endYear" aria-describedby="endYear">
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary"><i class="fas fa-search"></i>Search</button>
+                <button type="button" class="btn btn-primary"><i class="fas fa-trash"></i>Clear Results</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="assets.script.js"></script>
